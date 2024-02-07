@@ -1,0 +1,21 @@
+@use '../config/cores';
+
+.product-item img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-button {
+    display: block;
+    background-color: cores.$corBtnPrincipal;
+    color: $corLinks;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: cores.$corBtnSegundaria;
+    }
+}
