@@ -30,18 +30,24 @@ header {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    
 }
-.container {
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-        "header header header"
-        "sidebar main main"
-        "footer footer footer";
+.container {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "header header header"
+            "sidebar main main"
+            "footer footer footer";
+        
+        gap: 8px;
+}
     
-    }
-    
+}
+
+
     
     
     .header { 
@@ -67,7 +73,7 @@ header {
         }
 
         li a {
-            color: $corLinks;
+            color: cores.$corLinks;
             text-decoration: none;
     }
 
